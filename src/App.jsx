@@ -1,7 +1,14 @@
-import "./App.css";
+import Logo from "./componentes/logo";
+import TelaCadastro from "./componentes/TelaCadastro";
 
 function App() {
-  return <h1>teste</h1>;
+  return (
+    <div className="fundoPag">
+      <div className="bordaPrincipal">
+        <Logo />
+        <TelaCadastro />
+      </div>
+    </div>
+  );
 }
-
 export default App;

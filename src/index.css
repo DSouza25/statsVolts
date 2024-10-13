@@ -1,0 +1,30 @@
+.fundoPag {
+  background-image: url(/src/assets/fundo\ 1.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+.bordaPrincipal {
+  background-color: rgba(0, 238, 255, 0.21);
+  border-radius: 20px;
+  width: 55%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50%;
+}
