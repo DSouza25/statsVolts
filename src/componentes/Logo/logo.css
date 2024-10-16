@@ -1,0 +1,31 @@
+.logo img {
+  width: 326px;
+  height: 336px;
+  margin-top: 70px;
+  margin-left: 50px;
+}
+
+.bordaLogo {
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255, 0.21);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  width: 469px;
+  height: 762px;
+}
+
+.title {
+  width: 414px;
+  height: 178px;
+  margin-left: 50px;
+  margin-top: -70px;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 400;
+  color: #ffff;
+  letter-spacing: 6px;
+}
+
+.pular {
+  display: block;
+}
