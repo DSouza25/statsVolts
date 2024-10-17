@@ -1,0 +1,47 @@
+.Registrar {
+  border: 1px solid red;
+  width: 494px;
+  height: 569.55px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Registrar h1 {
+  width: 211px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 36px;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  color: #ffff;
+}
+
+.forms {
+  border: 1px solid red;
+}
+
+.inputName {
+  display: block;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+.inputNumber {
+  display: block;
+}
+
+.inputEmail {
+  display: block;
+}
+
+.inputPassword {
+  display: block;
+}
+
+.inputCreatePassword {
+  display: block;
+}
