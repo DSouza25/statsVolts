@@ -1,5 +1,4 @@
 .Registrar {
-  border: 1px solid red;
   width: 494px;
   height: 569.55px;
   margin-top: 100px;
@@ -7,41 +6,77 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-
-.Registrar h1 {
-  width: 211px;
-  height: 45px;
+.titulo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   line-height: 45px;
   font-size: 36px;
   font-family: "Readex Pro", sans-serif;
   font-weight: 400;
   color: #ffff;
+  width: 494px;
+  height: 614px;
 }
 
 .forms {
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .inputName {
-  display: block;
   font-family: "Readex Pro", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
+  border-radius: 30px;
+  width: 344px;
+  height: 53px;
+  padding: 0px 16px;
 }
 .inputNumber {
-  display: block;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 30px;
+  width: 344px;
+  height: 53px;
+  padding: 0px 16px;
 }
 
 .inputEmail {
-  display: block;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 30px;
+  width: 344px;
+  height: 53px;
+  padding: 0px 16px;
 }
 
 .inputPassword {
-  display: block;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 30px;
+  width: 344px;
+  height: 53px;
+  padding: 0px 16px;
 }
 
 .inputCreatePassword {
-  display: block;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 30px;
+  width: 344px;
+  height: 53px;
+  padding: 0px 16px;
 }

@@ -2,7 +2,10 @@ import "./Register.css";
 function Register() {
   return (
     <div className="Registrar">
-      <h1>REGISTRAR</h1>
+      <h1 className="titulo">
+        Criar uma conta. Vamos-lá! <br />
+        <span>Já é membro?</span> <span>Faça login</span>
+      </h1>
       <div className="forms">
         <input type="text" placeholder="Nome Completo:" className="inputName" />
         <input
