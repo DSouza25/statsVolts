@@ -1,5 +1,5 @@
-import Logo from "./componentes/logo";
-import TelaCadastro from "./componentes/TelaCadastro";
+import Logo from "./componentes/Logo/Logo.jsx";
+import TelaCadastro from "./componentes/Register/Register.jsx";
 
 function App() {
   return (
