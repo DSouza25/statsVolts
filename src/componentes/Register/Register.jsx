@@ -8,6 +8,7 @@ function Register() {
           Já é membro?<span className="Link"> Faça login</span>
         </span>
       </h1>
+
       <div className="forms">
         <input type="text" placeholder="Nome Completo:" className="inputName" />
         <input
@@ -22,6 +23,16 @@ function Register() {
           placeholder="Confirmar senha:"
           className="inputCreatePassword"
         />
+        <button className="createAccount">Criar Conta</button>
+      </div>
+
+      <div className="container-linha">
+        <div className="linha"></div>
+        <span className="ouAcesse">
+          Ou <br />
+          Acesse:
+        </span>
+        <div className="linha"></div>
       </div>
     </div>
   );
