@@ -1,4 +1,5 @@
 import "./Register.css";
+import Acesse from "./componentes/Acesse.jsx";
 function Register() {
   return (
     <div className="Registrar">
@@ -10,30 +11,37 @@ function Register() {
       </h1>
 
       <div className="forms">
-        <input type="text" placeholder="Nome Completo:" className="inputName" />
+        <input
+          type="text"
+          placeholder="Nome Completo:"
+          name="Nome Completo"
+          required
+        />
         <input
           type="tel"
           placeholder="Numero de telefone:"
-          className="inputNumber"
+          name="numero"
+          required
         />
-        <input type="email" placeholder="E-mail:" className="inputEmail" />
-        <input type="password" placeholder="Senha:" className="inputPassword" />
+        <input type="email" placeholder="E-mail:" name="email" required />
+        <input type="password" placeholder="Senha:" name="senha" required />
         <input
           type="password"
           placeholder="Confirmar senha:"
-          className="inputCreatePassword"
+          name="confirmar senha"
+          required
         />
         <button className="createAccount">Criar Conta</button>
-      </div>
 
-      <div className="container-linha">
-        <div className="linha"></div>
-        <span className="ouAcesse">
-          Ou <br />
-          Acesse:
-        </span>
-        <div className="linha"></div>
+        <div className="container-linha">
+          <div className="linha"></div>
+          <span className="ouAcesse">
+            Ou <br /> Acesse:
+          </span>
+          <div className="linha"></div>
+        </div>
       </div>
+      <Acesse />
     </div>
   );
 }
