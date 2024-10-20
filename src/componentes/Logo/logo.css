@@ -7,7 +7,12 @@
 
 .bordaLogo {
   border-radius: 50px;
-  background-color: rgb(255, 255, 255, 0.21);
+  background: linear-gradient(
+    160.72deg,
+    rgba(1, 245, 249, 0.21) 2.04%,
+    rgba(38, 0, 255, 0.21) 97.3%
+  );
+
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
   width: 469px;
   height: 762px;
