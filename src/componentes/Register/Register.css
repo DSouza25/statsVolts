@@ -6,10 +6,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 .titulo {
-  position: absolute;
+  position: fixed;
   line-height: 25px;
   font-size: 36px;
   font-family: "Readex Pro", sans-serif;
@@ -36,11 +35,16 @@
 .forms {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  position: relative;
 }
 
-.inputName {
+.forms input[type="text"],
+.forms input[type="tel"],
+.forms input[type="email"],
+.forms input[type="password"] {
   font-family: "Readex Pro", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -50,53 +54,16 @@
   height: 53px;
   padding: 0px 16px;
   border: none;
-}
-.inputNumber {
-  font-family: "Readex Pro", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  border-radius: 30px;
-  width: 344px;
-  height: 53px;
-  padding: 0px 16px;
-  border: none;
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.inputEmail {
-  font-family: "Readex Pro", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  border-radius: 30px;
-  width: 344px;
-  height: 53px;
-  padding: 0px 16px;
-  border: none;
-}
-
-.inputPassword {
-  font-family: "Readex Pro", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  border-radius: 30px;
-  width: 344px;
-  height: 53px;
-  padding: 0px 16px;
-  border: none;
-}
-
-.inputCreatePassword {
-  font-family: "Readex Pro", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  border-radius: 30px;
-  width: 344px;
-  height: 53px;
-  padding: 0px 16px;
-  border: none;
+.forms input[type="text"],
+.forms input[type="tel"],
+.forms input[type="email"],
+.forms input[type="password"]:focus {
+  outline: none;
 }
 
 .createAccount {
@@ -105,7 +72,35 @@
   font-size: 20px;
   line-height: 25px;
   border-radius: 30px;
+  width: 344px;
   height: 53px;
   padding: 0px 16px;
   border: none;
+  position: relative;
+  top: 20px;
+  background: linear-gradient(0deg, #d8d8d8, #d8d8d8);
+  backdrop-filter: blur(4px);
+}
+.container-linha {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 30px;
+}
+.linha {
+  flex-grow: 1;
+  height: 1px;
+  background-color: white;
+  width: 191px;
+}
+.ouAcesse {
+  padding: 0 10px;
+  white-space: nowrap;
+  text-align: center;
+  gap: 10px;
+  width: 104px;
+  font-family: "Readex Pro", sans-serif;
+  line-height: 20px;
+  letter-spacing: 2px;
+  color: #ffff;
 }
