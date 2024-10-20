@@ -21,7 +21,15 @@
 }
 
 .bordaPrincipal {
-  background-color: rgba(0, 238, 255, 0.21);
+  background: linear-gradient(
+    129.68deg,
+    rgba(1, 245, 249, 0.21) 33.76%,
+    rgba(0, 217, 255, 0.21) 91.86%
+  );
+  box-shadow: var(--sds-size-depth-0) var(--sds-size-depth-400)
+    var(--sds-size-depth-800) var(--sds-size-depth-negative-200)
+    var(--sds-color-black-400);
+
   border-radius: 50px;
   width: 1067px;
   height: 759px;
