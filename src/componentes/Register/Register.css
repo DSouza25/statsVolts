@@ -78,9 +78,20 @@
   border: none;
   position: relative;
   top: 20px;
-  background: linear-gradient(0deg, #d8d8d8, #d8d8d8);
-  backdrop-filter: blur(4px);
+  background: linear-gradient(
+    129.68deg,
+    rgba(1, 245, 249, 0.21) 33.76%,
+    rgba(0, 217, 255, 0.21) 91.86%
+  );
+  cursor: pointer;
+  transition: transform 0.4s ease, background-color 0.3s ease;
 }
+
+.createAccount:hover {
+  transform: scale(1.1); /* Aumenta o botão */
+  background-color: #ffff;
+}
+
 .container-linha {
   display: flex;
   align-items: center;

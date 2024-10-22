@@ -31,7 +31,9 @@ function Register() {
           name="confirmar senha"
           required
         />
-        <button className="createAccount">Criar Conta</button>
+        <button className="createAccount" type="submit">
+          Criar Conta
+        </button>
 
         <div className="container-linha">
           <div className="linha"></div>
