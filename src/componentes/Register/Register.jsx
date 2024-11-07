@@ -6,6 +6,7 @@ import { useState } from "react";
 import "firebase/auth";
 import { addDoc, collection } from "firebase/firestore";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [fullname, setFullname] = useState("");
@@ -14,6 +15,8 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
 
+  const navigate = useNavigate();
+
   async function handleForm(e) {
     e.preventDefault();
     //validação que retorna um alert na tela com a mensagem da restrição
@@ -21,6 +24,7 @@ const Register = () => {
       alert(
         "A senha deve conter no mínimo 8 caracteres, incluindo um número, uma letra maiúscula, uma letra minúscula e um caractere especial."
       );
+
       return;
     }
     //jogar os valores dos inputs para o firetore database, estrutura dentro de uma função.
@@ -36,6 +40,7 @@ const Register = () => {
     setEmail("");
     setPassword("");
     setPasswordConfirm("");
+    return navigate("/login");
   }
 
   //função assincrona que ao clicar no botao o usuario tem a sua autenticação de email e senha dentro do firebase
@@ -53,10 +58,12 @@ const Register = () => {
   return (
     <div className="Registrar">
       <h1 className="titulo">
-        <link rel="" href="" />
         Criar uma conta. Vamos-lá! <br />
         <span className="menor">
-          Já é membro?<span className="Link"> Faça login</span>
+          Já é membro?
+          <Link className="Link" to={"/Login"}>
+            Faça login
+          </Link>
         </span>
       </h1>
 
