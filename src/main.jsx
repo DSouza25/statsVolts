@@ -4,13 +4,15 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./pages/Login";
 import App from "./App";
+import ErrorPage from "./pages/ErrorPage";
 
 //config do router
 
 const router = createBrowserRouter([
   {
-    path: "/register",
+    path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/login",
