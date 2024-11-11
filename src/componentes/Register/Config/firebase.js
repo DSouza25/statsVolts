@@ -27,10 +27,11 @@ const db = getFirestore(firebaseapp);
 
 const provider = new GoogleAuthProvider();
 
-const signInWithGoogle = () => {
+const signInWithGoogle = (navigate) => {
   signInWithPopup(auth, provider)
     .then((result) => {
       console.log(result.user);
+      navigate("/login");
     })
     .catch((error) => {
       console.log(error);
@@ -41,14 +42,9 @@ const signInWithGoogle = () => {
 
 const providerFacebook = new FacebookAuthProvider();
 
-const signInWithFacebook = () => {
-  signInWithPopup(auth, providerFacebook)
-    .then((result) => {
-      console.log(result.user);
-    })
-    .catch((error) => {
-      console.erro(error);
-    });
+const FacebookAuth = async (navigate) => {
+  const fbAuth = signInWithPopup(auth, providerFacebook);
+  return fbAuth, navigate("/login");
 };
 
-export { auth, db, signInWithGoogle, signInWithFacebook };
+export { auth, db, signInWithGoogle, FacebookAuth };
