@@ -1,13 +1,26 @@
-import { signInWithFacebook, signInWithGoogle } from "../Config/firebase";
-import "./Acesse.css";
+import { FacebookAuth, signInWithGoogle } from "../Config/firebase";
+import "../css/Acesse.css";
+import { useNavigate } from "react-router-dom";
 
-function Acesse() {
+const Acesse = () => {
+  const navigate = useNavigate();
+
+  //evento para login com o google e ser direcionado para page login
+  const handleGoogleLogin = () => {
+    return signInWithGoogle(navigate);
+  };
+
+  async function handleFacebookLogin() {
+    const user = await FacebookAuth();
+    console.log("facebook user:", user);
+    return FacebookAuth(navigate);
+  }
   return (
     <div className="borda">
       <div className="image-container">
         <img
           src="./src/componentes/Register/images/google 1.svg"
-          onClick={signInWithGoogle}
+          onClick={handleGoogleLogin}
           style={{ cursor: "pointer" }}
         />
 
@@ -15,13 +28,12 @@ function Acesse() {
 
         <img
           src="./src/componentes/Register/images/facebook 1.svg"
-          alt=""
-          onClick={signInWithFacebook}
+          onClick={handleFacebookLogin}
           style={{ cursor: "pointer" }}
         />
       </div>
     </div>
   );
-}
+};
 
 export default Acesse;
