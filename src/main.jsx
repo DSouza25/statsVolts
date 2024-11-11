@@ -3,14 +3,16 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./pages/Login";
-import App from "./App";
+import App from "./pages/App";
+import ErroPage from "./pages/ErrorPage";
 
 //config do router
 
 const router = createBrowserRouter([
   {
-    path: "/register",
+    path: "",
     element: <App />,
+    errorElement: <ErroPage />,
   },
   {
     path: "/login",
