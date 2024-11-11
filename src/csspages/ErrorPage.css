@@ -13,6 +13,7 @@
   background: linear-gradient(360deg, #0031e0 13.58%, #35afff 92.04%);
   border: var(--sds-size-stroke-focus-ring);
   opacity: 0px;
+  position: absolute;
 }
 
 .triangle-image {
