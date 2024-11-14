@@ -9,13 +9,14 @@ function TextButton() {
   }
   return (
     <div className="text">
-      <h1>
-        Oops! Esta página não pode ser encontrada! <br />
-        <span>
-          Parece que não conseguimos encontrar o que você está procurando.
-          retorne para a página principal.
-        </span>
-      </h1>
+      <img
+        src="src\assets\Oops! Esta página não pode ser encontrada!.png"
+        alt=""
+      />
+      <img
+        src="src\assets\Parece que não conseguimos encontrar o que você está procurando. retorne para a página principal..png"
+        alt=""
+      />
       <button type="submit" onClick={nav}>
         <Link to={"/Login"}>
           <img src="../src\assets\Retornar a página principal.png" alt="" />
