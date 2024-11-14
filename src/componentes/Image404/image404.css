@@ -8,29 +8,31 @@
   width: 224px;
   height: 262px;
   opacity: 0px;
-  color: burn;
+  mix-blend-mode: color-burn;
 }
 #image2 {
-  bottom: 180px;
-  left: 70px;
   width: 343px;
   height: 351px;
   opacity: 0.6px;
+  mix-blend-mode: difference;
+  position: relative;
+  top: 150px;
+  margin-right: 70%;
 }
 #image3 {
   width: 261.83px;
   height: 261.76px;
-  bottom: 180px;
-  right: 70px;
+  margin-right: 150px;
+  margin-top: 50px;
   opacity: 0.5px;
 }
 
 #image4 {
   width: 231px;
   height: 223px;
-  top: 600px;
   gap: 0px;
   opacity: 0.5px;
+  mix-blend-mode: luminosity;
 }
 
 #image5 {
@@ -47,4 +49,5 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  mix-blend-mode: luminosity;
 }
