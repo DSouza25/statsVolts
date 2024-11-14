@@ -34,3 +34,64 @@
 .pular {
   display: block;
 }
+
+@media (max-width: 430px) {
+  .bordaLogo {
+    width: 430px;
+    height: 579px;
+    position: relative;
+    top: 273px;
+    left: 273px;
+    background: linear-gradient(
+      179.97deg,
+      rgba(0, 238, 255, 0.3) 0.03%,
+      rgba(0, 143, 153, 0.3) 99.97%
+    );
+    border-radius: 26px 26px 0 0;
+    box-shadow: none;
+  }
+
+  .logo img {
+    position: relative;
+    width: 222px;
+    height: 224px;
+    bottom: 350px;
+    left: 80px;
+    gap: 0px;
+    border-radius: 33px 0px 0px 0px;
+    opacity: 0px;
+  }
+
+  .logo p {
+    position: relative;
+    bottom: 270px;
+    text-align: center;
+    font-family: Readex Pro;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(4px);
+  }
+
+  .title {
+    height: 81px;
+    left: 80px;
+    opacity: 0px;
+    bottom: 350px;
+    position: relative;
+    font-family: Readex Pro;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .pular {
+    display: block;
+  }
+}

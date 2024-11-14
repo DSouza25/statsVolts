@@ -7,6 +7,7 @@ function Logo() {
         <h1 className="title">
           BEM-VINDO AO <span className="pular">STATSVOLTS!</span>
         </h1>
+        <p>REGISTRAR</p>
       </div>
     </div>
   );
