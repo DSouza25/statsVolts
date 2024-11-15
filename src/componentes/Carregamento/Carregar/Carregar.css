@@ -7,6 +7,7 @@
   width: 412px;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 img {
@@ -27,4 +28,48 @@ img {
   text-decoration-skip-ink: none;
   color: rgba(255, 255, 255, 1);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.carregar {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 10px dashed white;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 412px) {
+  .bordaMain {
+    width: 100%;
+  }
+
+  img {
+    position: relative;
+    top: 80px;
+    width: 286.77px;
+    height: 340px;
+    gap: 0px;
+    border-radius: 53px 0px 0px 0px;
+    opacity: 0px;
+  }
+
+  .nomeApp {
+    position: relative;
+    bottom: 100px;
+  }
+
+  .carregar {
+    position: relative;
+    top: 60px;
+  }
 }
