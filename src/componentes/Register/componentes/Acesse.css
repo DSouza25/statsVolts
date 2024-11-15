@@ -15,3 +15,14 @@
   display: flex;
   gap: 12px;
 }
+
+@media (max-width: 412px) {
+  .borda {
+    position: relative;
+    top: 120px;
+    right: 240px;
+    width: 157px;
+    height: 49.55px;
+    opacity: 0px;
+  }
+}

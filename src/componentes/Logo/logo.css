@@ -35,19 +35,19 @@
   display: block;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 412px) {
   .bordaLogo {
-    width: 430px;
-    height: 579px;
+    width: 412px;
+    height: 917px;
     position: relative;
-    top: 273px;
-    left: 273px;
+    top: 180px;
+    left: 265px;
     background: linear-gradient(
       179.97deg,
       rgba(0, 238, 255, 0.3) 0.03%,
       rgba(0, 143, 153, 0.3) 99.97%
     );
-    border-radius: 26px 26px 0 0;
+    border-radius: 26px;
     box-shadow: none;
   }
 
@@ -55,8 +55,8 @@
     position: relative;
     width: 222px;
     height: 224px;
-    bottom: 350px;
-    left: 80px;
+    bottom: 300px;
+    left: 60px;
     gap: 0px;
     border-radius: 33px 0px 0px 0px;
     opacity: 0px;
@@ -64,7 +64,7 @@
 
   .logo p {
     position: relative;
-    bottom: 270px;
+    bottom: 285px;
     text-align: center;
     font-family: Readex Pro;
     font-size: 20px;
@@ -78,9 +78,9 @@
 
   .title {
     height: 81px;
-    left: 80px;
+    left: 50px;
     opacity: 0px;
-    bottom: 350px;
+    bottom: 300px;
     position: relative;
     font-family: Readex Pro;
     font-size: 24px;
