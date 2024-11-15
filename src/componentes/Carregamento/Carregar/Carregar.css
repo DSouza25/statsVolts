@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&family=Rubik+Doodle+Shadow&family=Tilt+Warp&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
 
 .bordaMain {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   width: 412px;
