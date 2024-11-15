@@ -6,4 +6,11 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+  overflow-x: hidden; /* Desativa a rolagem horizontal */
+  overflow-y: hidden;
+}
+@media (max-width: 412px) {
+  .body {
+    width: 100%; /* Garante que o elemento não exceda a largura da viewport */
+  }
 }
