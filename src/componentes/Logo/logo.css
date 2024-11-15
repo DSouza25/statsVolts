@@ -35,6 +35,10 @@
   display: block;
 }
 
+.logo p {
+  display: none;
+}
+
 @media (max-width: 412px) {
   .bordaLogo {
     width: 412px;
