@@ -41,18 +41,17 @@
 
 @media (max-width: 412px) {
   .bordaLogo {
-    width: 412px;
-    height: 917px;
+    width: 410px;
+    height: 680px;
     position: relative;
     top: 180px;
-    left: 265px;
+    left: 272px;
     background: linear-gradient(
       179.97deg,
       rgba(0, 238, 255, 0.3) 0.03%,
       rgba(0, 143, 153, 0.3) 99.97%
     );
     border-radius: 26px;
-    box-shadow: none;
   }
 
   .logo img {
@@ -62,7 +61,7 @@
     bottom: 300px;
     left: 60px;
     gap: 0px;
-    border-radius: 33px 0px 0px 0px;
+
     opacity: 0px;
   }
 

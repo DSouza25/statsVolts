@@ -44,10 +44,12 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 430px;
-    height: 932px;
+    width: 412px;
+    height: 917px;
     gap: 0px;
     opacity: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   .bordaPrincipal {
