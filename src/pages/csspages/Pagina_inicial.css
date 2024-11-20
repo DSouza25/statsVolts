@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap");
+
+.acesse_Aqui {
+  width: 494px;
+  height: 569.55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+h1 {
+  line-height: 25px;
+  font-size: 36px;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  color: #ffff;
+  margin-bottom: 60px;
+}
+
+#botoes {
+  gap: 16px;
+}
+#botao_criar_conta {
+  text-decoration: none;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 30px;
+  width: 344px;
+  height: 53px;
+  padding: 0px 16px;
+  border: none;
+  top: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 217, 255, 0.5) 0%,
+    rgba(38, 0, 255, 0.5) 100%
+  );
+  color: #ffff;
+  cursor: pointer;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+#botao_criar_conta:hover {
+  transform: scale(1.1);
+  background-color: #ffff;
+}
+
+#botao_login {
+  text-decoration: none;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 30px;
+  width: 344px;
+  height: 53px;
+  padding: 0px 16px;
+  border: none;
+  top: 20px;
+  background: linear-gradient(0deg, #d8d8d8, #d8d8d8);
+  color: #122d5f;
+
+  cursor: pointer;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#botao_login:hover {
+  transform: scale(1.1);
+  background-color: #ffff;
+}
+
+.container-linha {
+  display: flex;
+  align-items: center;
+  top: 30px;
+}
+.linha {
+  flex-grow: 1;
+  height: 1px;
+  background-color: white;
+  width: 191px;
+}
+.ouAcesse {
+  padding: 0 10px;
+  white-space: nowrap;
+  text-align: center;
+  gap: 10px;
+  width: 104px;
+  font-family: "Readex Pro", sans-serif;
+  line-height: 20px;
+  letter-spacing: 2px;
+  color: #ffff;
+}
+
+@media (max-width: 500px) {
+  .acesse_Aqui {
+    width: 494px;
+    height: 569.55px;
+  }
+
+  #botao_login {
+    text-decoration: none;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 30px;
+    width: 344px;
+    height: 53px;
+    padding: 0px 16px;
+    border: none;
+    top: 20px;
+    background: linear-gradient(0deg, #d8d8d8, #d8d8d8);
+    color: #122d5f;
+
+    cursor: pointer;
+    transition: transform 0.4s ease, background-color 0.3s ease;
+  }
+
+  .linha {
+    bottom: 10px;
+  }
+}

@@ -1,33 +1,21 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App";
+import { Route, Routes } from "react-router-dom";
 import ErrorPage from "./pages/ErrorPage";
-import Register from "./componentes/Register/Register";
+import Register from "./pages/componentes/Register/Register";
 import Pagina_inicial from "./pages/Pagina_inicial";
+import Fundo from "./pages/componentes/telaFundo/Fundo";
 //config do router
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/",
-        element: <Pagina_inicial />,
-      },
-      {
-        path: "/Criar_conta",
-        element: <Register />,
-      },
-    ],
-  },
-]);
+function RoutesApp() {
+  return (
+    <Routes>
+      <Route path="/" element={<Fundo />}>
+        <Route index element={<Pagina_inicial />} />
+        <Route path="/pagina-inicial" element={<Pagina_inicial />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Route>
+    </Routes>
+  );
+}
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
-);
+export default RoutesApp;

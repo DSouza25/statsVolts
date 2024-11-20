@@ -1,6 +1,6 @@
-import Image404 from "../componentes/Image404/Image404";
-import TextButton from "../componentes/TextButton/TextButton";
-import "../csspages/ErrorPage.css";
+import Image404 from "./componentes/ErrorPage/Images404/Image404";
+import TextButton from "./componentes/ErrorPage/TextButton/TextButton";
+import ".././pages/csspages/ErrorPage.css";
 
 function ErroPage() {
   return (

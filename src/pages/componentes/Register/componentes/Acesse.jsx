@@ -21,15 +21,15 @@ function Acesse() {
     <div className="borda">
       <div className="image-container">
         <img
-          src="./src/componentes/Register/images/google 1.svg"
+          src="src\pages\componentes\Register\images\google 1.svg"
           style={{ cursor: "pointer" }}
           onClick={signInWithGoogle}
         />
 
-        <img src="./src/componentes/Register/images/linkdin.svg" alt="" />
+        <img src="src\pages\componentes\Register\images\linkdin.svg" alt="" />
 
         <img
-          src="./src/componentes/Register/images/facebook 1.svg"
+          src="src\pages\componentes\Register\images\facebook 1.svg"
           alt=""
           style={{ cursor: "pointer" }}
           onClick={signInWithFace}
