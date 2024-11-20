@@ -5,7 +5,7 @@ function TextButton() {
   const navigate = useNavigate();
 
   function nav() {
-    return navigate("/Pagina-Inicial");
+    return navigate("/");
   }
   return (
     <div className="text">
