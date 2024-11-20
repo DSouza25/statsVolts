@@ -3,10 +3,10 @@ import "./Register.css";
 import Acesse from "./componentes/Acesse.jsx";
 import { auth, db } from "./Config/firebase.js";
 import { useState } from "react";
-import "firebase/auth";
 import { addDoc, collection } from "firebase/firestore";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
+import "firebase/auth";
 
 const Register = () => {
   const [fullname, setFullname] = useState("");
@@ -19,6 +19,7 @@ const Register = () => {
 
   async function handleForm(e) {
     e.preventDefault();
+
     //validação que retorna um alert na tela com a mensagem da restrição
     if (!validarSenha(password)) {
       alert(
@@ -27,6 +28,7 @@ const Register = () => {
 
       return;
     }
+
     //jogar os valores dos inputs para o firetore database, estrutura dentro de uma função.
     await addDoc(collection(db, "usuarios"), {
       nome_completo: fullname,
@@ -35,12 +37,13 @@ const Register = () => {
       senha: password,
     });
     alert("cadastro realizado!");
+
     setFullname("");
     setNumberTel("");
     setEmail("");
     setPassword("");
     setPasswordConfirm("");
-    return navigate("/login");
+    navigate("/login");
   }
 
   //função assincrona que ao clicar no botao o usuario tem a sua autenticação de email e senha dentro do firebase
@@ -132,6 +135,7 @@ const Register = () => {
           <div className="linha"></div>
         </div>
       </form>
+
       <Acesse />
     </div>
   );

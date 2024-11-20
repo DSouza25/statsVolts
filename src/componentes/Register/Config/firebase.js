@@ -2,9 +2,10 @@ import { initializeApp } from "firebase/app";
 import {
   getAuth,
   GoogleAuthProvider,
-  signInWithPopup,
   FacebookAuthProvider,
+  signInWithPopup,
 } from "firebase/auth";
+
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -23,12 +24,16 @@ const firebaseapp = initializeApp(firebaseConfig);
 const auth = getAuth(firebaseapp);
 const db = getFirestore(firebaseapp);
 
-//auth com o google
+//provider google
 
 const provider = new GoogleAuthProvider();
 
-const signInWithGoogle = () => {
-  signInWithPopup(auth, provider)
+//provider face
+
+const providerface = new FacebookAuthProvider();
+
+const signInWithFace = () => {
+  signInWithPopup(auth, providerface)
     .then((result) => {
       console.log(result.user);
     })
@@ -36,19 +41,4 @@ const signInWithGoogle = () => {
       console.log(error);
     });
 };
-
-//login com Facebook
-
-const providerFacebook = new FacebookAuthProvider();
-
-const signInWithFacebook = () => {
-  signInWithPopup(auth, providerFacebook)
-    .then((result) => {
-      console.log(result.user);
-    })
-    .catch((error) => {
-      console.erro(error);
-    });
-};
-
-export { auth, db, signInWithGoogle, signInWithFacebook };
+export { auth, db, provider, signInWithFace };
