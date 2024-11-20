@@ -5,8 +5,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./pages/Login";
 import App from "./App";
 import ErrorPage from "./pages/ErrorPage";
-import PageHome from "./pages/PageHome";
-
+import Register from "./componentes/Register/Register"
+import Pagina_inicial from "./pages/Pagina_inicial"
 //config do router
 
 const router = createBrowserRouter([
@@ -14,15 +14,19 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/Pagina-Inicial",
-    element: <PageHome />,
-  },
+    children: [
+      {
+        path: "/",
+        element: <Pagina_inicial />,
+      },
+      {
+        path: "/Criar_conta",
+        element: <Register />
+      }
+    ]
+  }
+
+
 ]);
 
 createRoot(document.getElementById("root")).render(

@@ -1,12 +1,11 @@
 import Logo from "./componentes/Logo/Logo.jsx";
-import Register from "./componentes/Register/Register.jsx";
-
+import {Outlet} from "react-router-dom"
 function App() {
   return (
     <div className="fundoPag">
       <div className="bordaPrincipal">
         <Logo />
-        <Register />
+        <Outlet />
       </div>
     </div>
   );
