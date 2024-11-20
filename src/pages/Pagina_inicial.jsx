@@ -1,5 +1,5 @@
 import "../pages/csspages/Pagina_inicial.css";
-import Acesse from "./componentes/Register/componentes/Acesse.jsx";
+import Acesse from "./componentes/Register/componentes/Acesse";
 import { Link } from "react-router-dom";
 
 function Tela_inicial() {
