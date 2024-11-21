@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { provider, auth, signInWithFace } from "../Config/firebase";
+import { provider, auth } from "../Config/firebase";
 import { signInWithPopup } from "firebase/auth";
 import "./Acesse.css";
 
@@ -25,16 +25,8 @@ function Acesse() {
           style={{ cursor: "pointer" }}
           onClick={signInWithGoogle}
         />
-
-        <img src="./src/componentes/Register/images/linkdin.svg" alt="" />
-
-        <img
-          src="./src/componentes/Register/images/facebook 1.svg"
-          alt=""
-          style={{ cursor: "pointer" }}
-          onClick={signInWithFace}
-        />
       </div>
+      <h3>Sing in winth google</h3>
     </div>
   );
 }

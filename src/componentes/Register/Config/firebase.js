@@ -1,10 +1,5 @@
 import { initializeApp } from "firebase/app";
-import {
-  getAuth,
-  GoogleAuthProvider,
-  FacebookAuthProvider,
-  signInWithPopup,
-} from "firebase/auth";
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 import { getFirestore } from "firebase/firestore";
 
@@ -30,15 +25,4 @@ const provider = new GoogleAuthProvider();
 
 //provider face
 
-const providerface = new FacebookAuthProvider();
-
-const signInWithFace = () => {
-  signInWithPopup(auth, providerface)
-    .then((result) => {
-      console.log(result.user);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-};
-export { auth, db, provider, signInWithFace };
+export { auth, db, provider };
