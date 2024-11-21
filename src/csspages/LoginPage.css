@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap");
+
+.login-container {
+    width: 494px;
+    height: 569.55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.login-header h1 {
+    line-height: 25px;
+    font-size: 36px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: "Readex Pro", sans-serif;
+    color: #ffffff;
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.login-form label {
+    font-family: "Readex Pro", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.login-form input {
+    font-family: "Readex Pro", sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #D8D8D8;
+}
+
+.login-button {
+    text-decoration: none;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 30px;
+    width: 344px;
+    height: 53px;
+    padding: 0 16px;
+    border: none;
+    background: linear-gradient(90deg, rgba(0, 217, 255, 0.5) 0%, rgba(38, 0, 255, 0.5) 100%);
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.4s ease, background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.login-button:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+}
+
+.alternate-access {
+    display: flex;
+    align-items: center;
+    top: 30px;
+}
+
+.separator-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: white;
+    width: 191px;
+}
+
+.or-access {
+    padding: 0 10px;
+    white-space: nowrap;
+    text-align: center;
+    gap: 10px;
+    width: 104px;
+    font-family: "Readex Pro", sans-serif;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.additional-links a {
+    text-decoration: none;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.additional-links a:hover {
+    color: #D8D8D8;
+}
+
+@media (max-width: 500px) {
+    .login-container {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .login-button {
+        width: 100%;
+    }
+
+    .acesse_Aqui {
+        width: 494px;
+        height: 569.55px;
+    }
+
+    #botao_login {
+        text-decoration: none;
+        font-family: "Readex Pro", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        border-radius: 30px;
+        width: 344px;
+        height: 53px;
+        padding: 0px 16px;
+        border: none;
+        top: 20px;
+        background: linear-gradient(0deg, #D8D8D8, #D8D8D8);
+        color: #122D5F;
+        cursor: pointer;
+        transition: transform 0.4s ease, background-color 0.3s ease;
+    }
+
+    .separator-line {
+        bottom: 10px;
+    }
+}
