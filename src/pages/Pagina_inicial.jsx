@@ -5,10 +5,14 @@ function Tela_inicial() {
   return (
     <div className="acesse_Aqui">
       <div>
-        <h1>SEJA BEM VINDO!</h1>
+        <h1>ACESSE AQUI</h1>
       </div>
       <h2>Faça login na sua conta para continuar</h2>
       <div className="botoes">
+        <Link id="botao_criar_conta" to={"/register"}>
+          CRIAR CONTA
+        </Link>
+
         <Link id="botao_login" to={"/Login"}>
           LOGIN
         </Link>

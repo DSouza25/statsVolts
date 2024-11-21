@@ -42,34 +42,6 @@ const Register = () => {
     await createUserWithEmailAndPassword(auth, email, password);
   }
 
-  // uma constante function que restrige a senha com o formato default
-  document.getElementById("password").addEventListener("input", function () {
-    const password = this.value;
-    const requeriment = document.getElementById("requerimentsSenha");
-
-    requeriment.style.display = "block";
-
-    const length = document.getElementById("length");
-
-    if (password.length >= 6) {
-      length.classList.remove("invalid");
-      length.classList.add("valid");
-    } else {
-      length.classList.remove("valid");
-      length.classList.add("invalid");
-    }
-
-    const letters = document.getElementById("letters");
-
-    if(/[a-zA-Z]/.test(password)) {
-      letters.classList.remove("invalid")
-      letters.classList.add("valid")
-    } else {
-      letters.classList.remove("valid")
-      letters.classList.
-    }
-  });
-
   return (
     <div className="Registrar">
       <h1 className="titulo">
@@ -119,23 +91,6 @@ const Register = () => {
           value={password}
           required
         />
-
-        <div id="requerimentsSenha">
-          <ul>
-            <li id="length" className="invalid">
-              deve ter 6 caracteres
-            </li>
-            <li id="letters" className="invalid">
-              Letras
-            </li>
-            <li id="numbers" className="invalid">
-              Numeros
-            </li>
-            <li id="symbols" className="invalid">
-              Simbolos
-            </li>
-          </ul>
-        </div>
 
         <input
           type="password"
