@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         element: <Pagina_inicial />,
       },
       {
-        path: "/Criar_conta",
+        path: "/register",
         element: <Register />,
       },
     ],
