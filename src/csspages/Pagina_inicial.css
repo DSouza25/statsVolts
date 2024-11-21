@@ -17,7 +17,20 @@
       font-family: "Readex Pro", sans-serif;
       font-weight: 400;
       color: #ffff;
-      margin-bottom: 60px;
+     
+  }
+  h2{
+    font-family: "Readex Pro", sans-serif;
+    color: #ffff;
+    margin-bottom: 60px;
+font-size: 20px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0.05em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
   }
 
 
