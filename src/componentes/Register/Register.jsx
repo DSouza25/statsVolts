@@ -20,15 +20,6 @@ const Register = () => {
   async function handleForm(e) {
     e.preventDefault();
 
-    //validação que retorna um alert na tela com a mensagem da restrição
-    if (!validarSenha(password)) {
-      alert(
-        "A senha deve conter no mínimo 8 caracteres, incluindo um número, uma letra maiúscula, uma letra minúscula e um caractere especial."
-      );
-
-      return;
-    }
-
     //jogar os valores dos inputs para o firetore database, estrutura dentro de uma função.
     await addDoc(collection(db, "usuarios"), {
       nome_completo: fullname,
@@ -52,11 +43,32 @@ const Register = () => {
   }
 
   // uma constante function que restrige a senha com o formato default
-  const validarSenha = (password) => {
-    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
+  document.getElementById("password").addEventListener("input", function () {
+    const password = this.value;
+    const requeriment = document.getElementById("requerimentsSenha");
 
-    return regex.test(password);
-  };
+    requeriment.style.display = "block";
+
+    const length = document.getElementById("length");
+
+    if (password.length >= 6) {
+      length.classList.remove("invalid");
+      length.classList.add("valid");
+    } else {
+      length.classList.remove("valid");
+      length.classList.add("invalid");
+    }
+
+    const letters = document.getElementById("letters");
+
+    if(/[a-zA-Z]/.test(password)) {
+      letters.classList.remove("invalid")
+      letters.classList.add("valid")
+    } else {
+      letters.classList.remove("valid")
+      letters.classList.
+    }
+  });
 
   return (
     <div className="Registrar">
@@ -107,6 +119,23 @@ const Register = () => {
           value={password}
           required
         />
+
+        <div id="requerimentsSenha">
+          <ul>
+            <li id="length" className="invalid">
+              deve ter 6 caracteres
+            </li>
+            <li id="letters" className="invalid">
+              Letras
+            </li>
+            <li id="numbers" className="invalid">
+              Numeros
+            </li>
+            <li id="symbols" className="invalid">
+              Simbolos
+            </li>
+          </ul>
+        </div>
 
         <input
           type="password"
