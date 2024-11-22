@@ -1,13 +1,5 @@
-import Logo from "./componentes/Logo/Logo.jsx";
-import {Outlet} from "react-router-dom"
+import AppRouter from "./router";
 function App() {
-  return (
-    <div className="fundoPag">
-      <div className="bordaPrincipal">
-        <Logo />
-        <Outlet />
-      </div>
-    </div>
-  );
+  return <AppRouter />;
 }
 export default App;
