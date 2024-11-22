@@ -26,7 +26,7 @@ function Acesse() {
           onClick={signInWithGoogle}
         />
       </div>
-      <h3>Sing in winth google</h3>
+      <h3>Sign in with google</h3>
     </div>
   );
 }

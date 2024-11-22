@@ -79,12 +79,16 @@
   position: relative;
   top: 20px;
   background: linear-gradient(
-    129.68deg,
-    rgba(1, 245, 249, 0.21) 33.76%,
-    rgba(0, 217, 255, 0.21) 91.86%
+    90deg,
+    rgba(0, 217, 255, 0.5) 0%,
+    rgba(38, 0, 255, 0.5) 100%
   );
+  color: #ffffff;
   cursor: pointer;
   transition: transform 0.4s ease, background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .createAccount:hover {
