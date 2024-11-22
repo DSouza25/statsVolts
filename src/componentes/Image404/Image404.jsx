@@ -2,7 +2,7 @@ import "./Image404.css";
 
 function Image404() {
   return (
-    <div className="main">
+    <div className="mainError">
       <img
         src="./src/assets/queda-de-energia 1.png"
         className="triangle-image"
