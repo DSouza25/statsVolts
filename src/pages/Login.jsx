@@ -36,19 +36,13 @@ function Login() {
           LOGIN
         </button>
       </form>
-      <div className="alternate-access">
-        <div className="separator-line"></div>
-        <span className="or-access">Ou Acesse:</span>
-        <div className="separator-line"></div>
-      </div>
+    
       <div className="additional-links">
         <Link to="/register" className="register-link">
-          CRIE UMA CONTA
-        </Link>
-        <Link to="/forgot-password" className="forgot-password-link">
-          ESQUECI A SENHA
-        </Link>
+          Não tenho conta. Cadastrar
+        </Link><br/>
       </div>
+      
     </div>
   );
 }
