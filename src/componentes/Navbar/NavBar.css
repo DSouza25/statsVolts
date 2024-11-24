@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Readex+Pro:wght@160..700&family=Rubik+Doodle+Shadow&family=Tilt+Warp&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
 
 .container-main {
-  border: 1px solid red;
   width: 100%;
+  position: fixed;
   height: 63px;
   background: rgba(15, 33, 151, 1);
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 2;
 }
 
 .logoTitle {
@@ -75,7 +76,6 @@
 }
 
 .perfilNot ul {
-  border: 1px solid red;
   list-style-type: none;
   display: flex;
   align-items: center;
