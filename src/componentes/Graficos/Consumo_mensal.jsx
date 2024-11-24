@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Chart from "react-apexcharts";
-import "./Grafico_pie.css"
-//pelo amor de Deus funciona
+import "./Grafico_pie.css";
+//pelo amor de Deus funciona, vai funcionar
 const Consumo_mensal = () => {
   const [chartData] = useState({
     series: [
@@ -21,7 +21,6 @@ const Consumo_mensal = () => {
         toolbar: {
           show: false, // Remove o menu de opções do gráfico
         },
-    
       },
       colors: ["#007bff", "#ced4da"], // Azul para "Últimos 6 dias" e cinza para "Semana passada"
       plotOptions: {
@@ -60,8 +59,8 @@ const Consumo_mensal = () => {
         //perte gpt
       },
       yaxis: {
-        labels:{
-            show: false,
+        labels: {
+          show: false,
         },
         title: {
           show: false,
@@ -70,13 +69,12 @@ const Consumo_mensal = () => {
       fill: {
         opacity: 1,
       },
-     //fim da parte gpt
+      //fim da parte gpt
     },
   });
 
   return (
     <div>
-           
       <h3>Relatório de Consumo</h3>
       <p style={{ fontSize: "24px", fontWeight: "bold" }}>IDR 7.852.000</p>
       <p style={{ color: "green" }}>↑ 2.1% Última semana</p>
