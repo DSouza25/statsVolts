@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Chart from "react-apexcharts";
 import "./Grafico_pie.css";
 //pelo amor de Deus funciona, vai funcionar

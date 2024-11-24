@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import Chart from "react-apexcharts";
 import "./Grafico_pie.css";
 class Donut extends Component {
-  //funciona porfavor
+  //funciona
   constructor(props) {
     super(props);
 
