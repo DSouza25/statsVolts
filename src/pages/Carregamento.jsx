@@ -1,6 +1,5 @@
-import Carregar from "../componentes/Carregamento/Carregar/Carregar";
 import "/src/csspages/Carregamento.css";
-
+import Carregar from "../componentes/Carregar/Carregar";
 function Carregamento() {
   return (
     <div className="body">
