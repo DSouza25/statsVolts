@@ -16,7 +16,7 @@
 }
 
 .logoTitle img {
-  width: 90px;
+  width: 70px;
   position: relative;
   top: 15px;
 }
@@ -24,8 +24,8 @@
 .logoTitle span {
   width: 127px;
   height: 11px;
-  top: 40px;
-  right: 20px;
+  top: 30px;
+  right: 10px;
   gap: 0px;
   opacity: 0px;
   font-family: Poppins;

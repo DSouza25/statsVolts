@@ -47,7 +47,7 @@ const Register = () => {
   }
 
   if (loading) {
-    <Carregamento />;
+    return <Carregamento />;
   }
 
   return (
