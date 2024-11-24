@@ -9,6 +9,7 @@
 }
 .titulo {
   position: fixed;
+  bottom: 150px;
   line-height: 25px;
   font-size: 36px;
   font-family: "Readex Pro", sans-serif;

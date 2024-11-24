@@ -38,8 +38,8 @@ function Login() {
       <div className="login-header">
         <h1>Faça Login em sua conta.</h1>
       </div>
-      <h2>Bem vindo de Volta!</h2>
-      <form className="forms">
+      <h2 id="Bem_vindo">Bem vindo de Volta!</h2>
+      <form id="formulario" className="forms">
         <input
           type="email"
           placeholder="E-mail:"
@@ -56,24 +56,26 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-
-        <button type="submit" className="login-button" onClick={handleSignIn}>
+        <span>
+          <input type="checkbox" id="lembreDeMim" />
+          <span id="Lembra-me">Lembra-me</span>
+        </span>
+        <button type="submit" className="login-button">
           LOGIN
         </button>
       </form>
-      <div className="alternate-access">
-        <div className="separator-line"></div>
-        <span className="or-access">Ou Acesse:</span>
-        <div className="separator-line"></div>
-      </div>
       <div className="additional-links">
         <Link to="/register" className="register-link">
-          CRIE UMA CONTA
-        </Link>
-        <Link to="/forgot-password" className="forgot-password-link">
-          ESQUECI A SENHA
+          Não tenho uma conta. <span id="Cadastrar">Cadastrar</span>
         </Link>
       </div>
+      <Link
+        id="Esqueci_senha"
+        to="/forgot-password"
+        className="forgot-password-link"
+      >
+        Esqueceu a senha?
+      </Link>
     </div>
   );
 }
