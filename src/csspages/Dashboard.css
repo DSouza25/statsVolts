@@ -1,0 +1,123 @@
+.containerDash {
+  padding-top: 100px;
+  z-index: 3;
+  position: absolute;
+  width: 86.2%;
+  top: 63px;
+  left: 262px;
+  display: grid;
+  grid-template-columns: 1000px 600px;
+  grid-gap: 0px;
+}
+
+.box {
+  margin-left: 30px;
+}
+
+.containerDash::before {
+  position: fixed;
+  top: 55%; /* Centraliza verticalmente */
+  left: 50px;
+  right: 0;
+  width: 1550px;
+  height: 0.5px; /* Espessura da borda horizontal */
+  transform: translateY(-40%); /* Ajusta para centralizar perfeitamente */
+}
+
+.containerDash::after {
+  position: fixed;
+  top: 110px;
+  bottom: 0;
+  left: 60%; /* Centraliza horizontalmente */
+  width: 0.5px; /* Espessura da borda vertical */
+  height: 730px;
+  transform: translateX(-50%); /* Ajusta para centralizar perfeitamente */
+}
+.containerDash::before,
+.containerDash::after {
+  position: fixed;
+
+  content: "";
+  position: absolute;
+  background-color: rgba(200, 203, 217, 1); /* Cor das bordas */
+}
+
+#semanal {
+  position: relative;
+  top: 50px;
+}
+
+#pontosConsumo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 350px;
+  height: 239px;
+  position: relative;
+  left: 550px;
+  top: 30px;
+}
+
+#pontosConsumo::after {
+  position: fixed;
+  top: -25px;
+  bottom: 0;
+  right: 110%; /* Centraliza horizontalmente */
+  width: 0.5px; /* Espessura da borda vertical */
+  height: 390px;
+  transform: translateX(-50%); /* Ajusta para centralizar perfeitamente */
+}
+#pontosConsumo::before,
+#pontosConsumo::after {
+  position: fixed;
+  content: "";
+  position: absolute;
+  background-color: rgba(200, 203, 217, 1); /* Cor das bordas */
+}
+
+#pontosConsumo #title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.listPontos {
+  text-decoration: none;
+  opacity: 0.8px;
+  border-bottom: 0.5px solid rgba(219, 229, 235, 1);
+}
+
+.listPontosName {
+  position: relative;
+  bottom: 15px;
+  left: 20px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(39, 50, 64, 1);
+}
+
+.kwhVitrine {
+  position: relative;
+  left: 90px;
+  opacity: 70%;
+}
+
+.kwhEstoque {
+  position: relative;
+  left: 145px;
+}
+
+.kwhEscritorio {
+  position: relative;
+  left: 25px;
+}
+
+.kwhNovidade {
+  position: relative;
+  left: 55px;
+}
