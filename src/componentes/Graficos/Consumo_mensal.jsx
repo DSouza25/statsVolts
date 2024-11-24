@@ -83,8 +83,8 @@ const Consumo_mensal = () => {
         options={chartData.options}
         series={chartData.series}
         type="bar"
-        height={350}
-        width={1000}
+        height={200}
+        width={700}
       />
     </div>
   );

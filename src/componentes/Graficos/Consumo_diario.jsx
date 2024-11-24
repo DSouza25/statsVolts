@@ -56,8 +56,8 @@ class Donut extends Component {
               options={this.state.options}
               series={this.state.series}
               type="donut"
-              height={350}
-              width={500}
+              height={322}
+              width={362}
             />
           </div>
         </div>

@@ -16,7 +16,7 @@ function Consumo_semanal() {
     ],
     options: {
       chart: {
-        height: 350,
+        height: 322,
         type: "line",
         toolbar: {
           show: false, // Remove o menu de opções do gráfico
@@ -67,7 +67,7 @@ function Consumo_semanal() {
         options={chartData.options}
         series={chartData.series}
         type="line"
-        height={322}
+        height={280}
         width={373}
       />
     </div>
