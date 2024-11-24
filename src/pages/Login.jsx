@@ -1,11 +1,7 @@
-import { useState } from "react";
 import "../csspages/LoginPage.css";
 import { Link } from "react-router-dom";
 
 function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
   return (
     <div className="login-container">
       <div className="login-header">
@@ -18,8 +14,6 @@ function Login() {
           placeholder="E-mail:"
           name="email"
           id="emailInput"
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
           required
         />
         <input
@@ -27,8 +21,6 @@ function Login() {
           placeholder="Senha:"
           name="senha"
           id="passwordInput"
-          onChange={(e) => setPassword(e.target.value)}
-          value={password}
           required
         />
 

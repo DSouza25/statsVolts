@@ -4,7 +4,9 @@ import Acesse from "./componentes/Acesse.jsx";
 import { auth, db } from "./Config/firebase.js";
 import { useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import Carregamento from "../../pages/Carregamento.jsx";
+
 import { Link, useNavigate } from "react-router-dom";
 import "firebase/auth";
 
@@ -14,7 +16,8 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
-  //const [passwordError, setPasswordError] = useState("");
+  const [createUserWithEmailAndPassword, user, loading, error] =
+    useCreateUserWithEmailAndPassword(auth);
 
   const navigate = useNavigate();
 
@@ -39,8 +42,12 @@ const Register = () => {
   }
 
   //função assincrona que ao clicar no botao o usuario tem a sua autenticação de email e senha dentro do firebase
-  async function cadastrar() {
-    await createUserWithEmailAndPassword(auth, email, password);
+  function cadastrar() {
+    createUserWithEmailAndPassword(email, password);
+  }
+
+  if (loading) {
+    <Carregamento />;
   }
 
   return (
