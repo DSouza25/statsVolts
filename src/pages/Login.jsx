@@ -60,7 +60,7 @@ function Login() {
           <input type="checkbox" id="lembreDeMim" />
           <span id="Lembra-me">Lembra-me</span>
         </span>
-        <button type="submit" className="login-button">
+        <button type="submit" className="login-button" onClick={handleSignIn}>
           LOGIN
         </button>
       </form>

@@ -76,15 +76,40 @@ const Consumo_mensal = () => {
   return (
     <div>
       <h3>Relatório de Consumo</h3>
-      <p style={{ fontSize: "24px", fontWeight: "bold" }}>IDR 7.852.000</p>
+
+      <p style={{ fontSize: "24px", fontWeight: "bold" }}>BRL 230,00</p>
+
       <p style={{ color: "green" }}>↑ 2.1% Última semana</p>
-      <p>Consumo de energia por mês</p>
+
+      <p
+        style={{
+          fontSize: "13",
+          width: "400px",
+          color: "rgba(0, 0, 0, 1)",
+
+          marginTop: "20px",
+        }}
+      >
+        Consumo de energia por mês
+      </p>
+
+      <button
+        style={{
+          marginBottom: "90px",
+          position: "relative",
+          left: "100px",
+          top: "30px",
+        }}
+        id="Ver_relatorio"
+      >
+        Vizualizar relatorio
+      </button>
       <Chart
         options={chartData.options}
         series={chartData.series}
         type="bar"
         height={200}
-        width={700}
+        width={900}
       />
     </div>
   );

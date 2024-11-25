@@ -63,12 +63,23 @@ function Consumo_semanal() {
       <p style={{ fontSize: "24px", fontWeight: "bold" }}>85 kWh/m²</p>
       <p style={{ color: "red" }}>↓ 2.1% Semana passada</p>
       <p style={{ color: "green" }}>↑ 3.1% Fim da semana</p>
+      <button
+        style={{
+          marginBottom: "90px",
+          position: "relative",
+          left: "20px",
+          top: "5px",
+        }}
+        id="Ver_relatorio"
+      >
+        Vizualizar relatorio
+      </button>
       <Chart
         options={chartData.options}
         series={chartData.series}
         type="line"
-        height={280}
-        width={373}
+        height={200}
+        width={350}
       />
     </div>
   );

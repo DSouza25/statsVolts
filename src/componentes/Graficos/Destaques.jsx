@@ -10,12 +10,35 @@ const Destaques = () => {
         margin: "auto",
       }}
     >
-      <h3 style={{ textAlign: "center" }}>Destaques</h3>
-      <p style={{ textAlign: "left", fontSize: "14px", color: "#666" }}>
+      <h3
+        style={{
+          textAlign: "center",
+          position: "relative",
+          top: "70px",
+          left: "20px",
+        }}
+      >
+        Destaques
+      </h3>
+      <p
+        style={{
+          textAlign: "left",
+          fontSize: "14px",
+          color: "#666",
+          position: "relative",
+          top: "70px",
+          left: "20px",
+        }}
+      >
         Pontos de atenção mensais
       </p>
 
-      <svg width="350" height="350" viewBox="0 0 350 350">
+      <svg
+        width="400"
+        height="400"
+        viewBox="0 0 350 350"
+        style={{ position: "relative", top: "10px", left: "50px" }}
+      >
         {/* Círculo "Geral" */}
         <circle cx="175" cy="175" r="70" fill="#F6C23E" />
         <text

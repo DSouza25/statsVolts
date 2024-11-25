@@ -22,7 +22,9 @@ function NavBar() {
           <li>
             <img src="src\assets\user.png" className="img-user" alt="" />
           </li>
-          <li className="user-Name">testeUsuario</li>
+          <li className="user-Name">
+            <span>teste</span>
+          </li>
           <li>
             <img src="src\assets\Notif Icon.png" className="noti-User" alt="" />
           </li>

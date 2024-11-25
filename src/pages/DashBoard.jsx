@@ -3,6 +3,7 @@ import Consumo_mensal from "../componentes/Graficos/Consumo_mensal";
 import "../csspages/Dashboard.css";
 import Consumo_semanal from "../componentes/Graficos/Consumo_semanal";
 import { Link } from "react-router-dom";
+import Destaques from "../componentes/Graficos/Destaques";
 
 function Dashboard() {
   return (
@@ -13,8 +14,8 @@ function Dashboard() {
       <div className="box">
         <Donut />
       </div>
-      <div className="box">
-        destaque
+      <div className="box" id="destaque">
+        <Destaques />
         <div className="box" id="pontosConsumo">
           <span id="title">Pricipais pontos de consumo</span>
           <Link to={"/"} className="listPontos">

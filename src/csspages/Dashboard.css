@@ -16,7 +16,7 @@
 
 .containerDash::before {
   position: fixed;
-  top: 55%; /* Centraliza verticalmente */
+  top: 60%; /* Centraliza verticalmente */
   left: 50px;
   right: 0;
   width: 1550px;
@@ -44,7 +44,8 @@
 
 #semanal {
   position: relative;
-  top: 50px;
+  top: 80px;
+  left: 20px;
 }
 
 #pontosConsumo {
@@ -54,17 +55,17 @@
   width: 350px;
   height: 239px;
   position: relative;
-  left: 550px;
-  top: 30px;
+  right: 80px;
+  top: 100px;
 }
 
 #pontosConsumo::after {
   position: fixed;
-  top: -25px;
+  top: -46px;
   bottom: 0;
-  right: 110%; /* Centraliza horizontalmente */
+  right: 120%; /* Centraliza horizontalmente */
   width: 0.5px; /* Espessura da borda vertical */
-  height: 390px;
+  height: 360px;
   transform: translateX(-50%); /* Ajusta para centralizar perfeitamente */
 }
 #pontosConsumo::before,
@@ -120,4 +121,11 @@
 .kwhNovidade {
   position: relative;
   left: 55px;
+}
+
+#destaque {
+  display: flex;
+
+  width: 1000px;
+  height: 300px;
 }
