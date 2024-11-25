@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Chart from "react-apexcharts";
 import "./Grafico_pie.css";
 
@@ -57,6 +57,23 @@ function Consumo_semanal() {
     },
   });
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setChartData((prevData) => {
+        const newSeries = prevData.series.map((serie) => {
+          const newData = serie.data.map((value) => {
+            const oscillation = Math.floor(Math.random() * 10) - 5; // Oscilação de -5 a 5
+            return Math.max(0, value + oscillation); // Garante que o valor não seja negativo
+          });
+          return { ...serie, data: newData };
+        });
+        return { ...prevData, series: newSeries };
+      });
+    }, 2000); // Atualiza a cada 2 segundos
+
+    return () => clearInterval(interval); // Limpa o intervalo quando o componente desmonta
+  }, []);
+
   return (
     <div>
       <h3>Semana</h3>
@@ -72,7 +89,7 @@ function Consumo_semanal() {
         }}
         id="Ver_relatorio"
       >
-        Vizualizar relatorio
+        Vizualizar relatório
       </button>
       <Chart
         options={chartData.options}
@@ -84,7 +101,5 @@ function Consumo_semanal() {
     </div>
   );
 }
-
-//teste
 
 export default Consumo_semanal;
