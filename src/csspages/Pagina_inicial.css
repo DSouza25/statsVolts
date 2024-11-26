@@ -16,9 +16,12 @@
   font-family: "Readex Pro", sans-serif;
   font-weight: 400;
   color: #ffff;
-  
 }
-h2 {
+
+.acesse_Aqui span {
+  color: rgba(251, 202, 5, 1);
+}
+.acesse_Aqui h2 {
   font-family: "Readex Pro", sans-serif;
   color: #ffff;
   margin-bottom: 80px;
@@ -26,10 +29,9 @@ h2 {
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0.05em;
-  text-align: left;
+  text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
 }
 
 #botoes {

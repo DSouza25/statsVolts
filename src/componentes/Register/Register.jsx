@@ -38,16 +38,12 @@ const Register = () => {
     setEmail("");
     setPassword("");
     setPasswordConfirm("");
-    navigate("/login");
+    navigate("/Login");
   }
 
   //função assincrona que ao clicar no botao o usuario tem a sua autenticação de email e senha dentro do firebase
   function cadastrar() {
     createUserWithEmailAndPassword(email, password);
-  }
-
-  if (loading) {
-    return <Carregamento />;
   }
 
   return (

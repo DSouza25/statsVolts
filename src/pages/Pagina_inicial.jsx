@@ -5,9 +5,12 @@ function Tela_inicial() {
   return (
     <div className="acesse_Aqui">
       <div>
-        <h1>ACESSE AQUI</h1>
+        <h1>Seja Bem-vindo!</h1>
       </div>
-      <h2>Faça login na sua conta para continuar</h2>
+      <h2>
+        Faça login na sua conta para continuar <br /> E consulte sua{" "}
+        <span>Energia</span>
+      </h2>
       <div className="botoes">
         <Link id="botao_criar_conta" to={"/register"}>
           CRIAR CONTA
