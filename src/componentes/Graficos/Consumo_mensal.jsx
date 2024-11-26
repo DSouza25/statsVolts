@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Chart from "react-apexcharts";
 import "./Grafico_pie.css";
-//pelo amor de Deus funciona, vai funcionar
+
 const Consumo_mensal = () => {
-  const [chartData] = useState({
+  const [chartData, setChartData] = useState({
     series: [
       {
         name: "Últimos 6 dias",
@@ -56,7 +56,6 @@ const Consumo_mensal = () => {
         title: {
           text: "Mês",
         },
-        //perte gpt
       },
       yaxis: {
         labels: {
@@ -69,9 +68,25 @@ const Consumo_mensal = () => {
       fill: {
         opacity: 1,
       },
-      //fim da parte gpt
     },
   });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setChartData((prevData) => {
+        const newSeries = prevData.series.map((serie) => {
+          const newData = serie.data.map((value) => {
+            const oscillation = Math.floor(Math.random() * 10) - 8+11;
+            return value + oscillation;
+          });
+          return { ...serie, data: newData };
+        });
+        return { ...prevData, series: newSeries };
+      });
+    }, 2000); // Atualiza a cada 2 segundos
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div>
@@ -86,7 +101,6 @@ const Consumo_mensal = () => {
           fontSize: "13",
           width: "400px",
           color: "rgba(0, 0, 0, 1)",
-
           marginTop: "20px",
         }}
       >
@@ -102,7 +116,7 @@ const Consumo_mensal = () => {
         }}
         id="Ver_relatorio"
       >
-        Vizualizar relatorio
+        Visualizar relatório
       </button>
       <Chart
         options={chartData.options}
@@ -115,4 +129,4 @@ const Consumo_mensal = () => {
   );
 };
 
-export default Consumo_mensal;
+export default Consumo_mensal;
